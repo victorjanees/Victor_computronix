@@ -1,0 +1,1 @@
+web: gunicorn victor_computronix.wsgi
