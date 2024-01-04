@@ -21,6 +21,7 @@ from startup.views import raise_a_request
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',home_page),
+    path('',home_page),
     path('raise_a_request/',raise_a_request),
+    # path('thanks',thanks)
 ]

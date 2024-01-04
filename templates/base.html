@@ -4,6 +4,7 @@
 <title>Victor Comoutronix</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/d4fd584150.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +13,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
+  {%  load static %}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -19,18 +21,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <img src="{%  static 'logo.jpg' %}" style="width:45%;" class="w3-round"><br><br>
     <h4><b>Victor Computronix</b></h4>
     <!-- <p class="w3-text-grey">Template by W3.CSS</p> -->
   </div>
   <div class="w3-bar-block">
     <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT US</a>
+    <a href="raise_a_request" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa-solid fa-screwdriver-wrench w3-margin-right"></i>  RAISE A REQUEST</a>
+    <a href="https://www.instagram.com/victor_computronix?igsh=MW5ycjhrN2k2OXQwMQ==" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa-brands fa-square-instagram w3-margin-right"></i>  <b>@victor_computronix</b></a>
+
   </div>
   <div class="w3-panel w3-large">
     <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
     <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
@@ -63,24 +68,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="{% static 'pc.jpg' %}" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>PC BUILD & LAPTOPS</b></p>
+        <p>All kinds of PC and Laptops available for sale, Services like upgrading, OS installation, Deep cleaning and chip level services also available.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="{% static 'cctv.jpg' %}" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>CCTV</b></p>
+        <p>Installation and Service of IP & Analog cameras in all brands are avilable. Also includes Services like cable management and Racker box installation.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="{% static 'inverter.jpg' %}" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>INVERTER</b></p>
+        <p>Installation and Service available for all brands with proper load and backup calculation with protection devices, Also providing periodic maintanence.</p>
       </div>
     </div>
   </div>
@@ -133,34 +138,35 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <h4><b>About Us</b></h4>
+    <p>For us, Its not about the Ideas.It's about making Ideas happen.</p>
+    <p>We never choose or recommend money over quality.</p>
     <hr>
     
     <h4>Technical Skills</h4>
     <!-- Progress bars / Skills -->
-    <!-- <p>Photography</p>
+    <p>PC build</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:96%">96%</div>
+    </div>
+    <p>CCTV</p>
     <div class="w3-grey">
       <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
     </div>
-    <p>Web Design</p>
+    <p>Inverter</p>
     <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:94%">94%</div>
     </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
+    <!-- <p>
       <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
         <i class="fa fa-download w3-margin-right"></i>Download Resume
       </button>
-    </p>
-    <hr> -->
+    </p> -->
+    <hr>
     
-    <h4>How much I charge</h4>
+    <!-- <h4>How much I charge</h4> -->
     <!-- Pricing Tables -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
           <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
@@ -212,7 +218,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
@@ -223,8 +229,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>victorcomputronix@gmail.com</p>
       </div>
       <div class="w3-third w3-teal">
+        <a href="https://maps.app.goo.gl/XcjrAsHHPTDLawJr8">
         <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Ennore, CH-57</p>
+        <p>Ennore, CH-57</p></a>
       </div>
       <div class="w3-third w3-dark-grey">
         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
@@ -232,7 +239,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
+    <!-- <form target="_blank">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -246,11 +253,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
       <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-    </form>
+    </form> -->
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <!-- <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
       <h3>FOOTER</h3>
@@ -288,7 +295,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div> -->
 
 <!-- End page content -->
 </div>
