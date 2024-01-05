@@ -126,4 +126,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+<<<<<<< HEAD
 
+=======
+>>>>>>> eef29b0143e26c6005262cbfc9b89cc3287e559a
