@@ -15,6 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 from django.urls import path
 from .views import home_page
 from startup.views import raise_a_request
@@ -25,3 +27,5 @@ urlpatterns = [
     path('raise_a_request/',raise_a_request),
     # path('thanks',thanks)
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root =settings.STATIC_ROOT)
